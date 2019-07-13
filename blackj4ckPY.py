@@ -1,10 +1,10 @@
-from pyCard import Card, Deck, Hand
+from Card_Deck_Hand import Card, Deck, Hand
 # -------------- 1-ON-1 BLACKJACK ------------------------
 class blackjack_1on1(Deck):
     """ CLASS INH FROM DECK THAT DEALS CARDS AND REPORTS THE PROBLTY """
     def __init__(self, player_name = 'Attila'):
         self.player_name = player_name
-        self.cards = [Card(suit, rank) for suit in range(len(Card.suit_l1st)) for rank in range(1, len(Card.rank_l1st))] *15
+        self.cards = [Card(suit, rank) for suit in range(len(Card.suit_l1st)) for rank in range(1, len(Card.rank_l1st))] * 6
         print('self-cards')
         print(len(self.cards))
         self.shuffle() 
@@ -21,7 +21,7 @@ class blackjack_1on1(Deck):
         print('\n...play blackjack 1-on-1...\n')
     
     def display_with_style(self, display_message=''):
-        print('\n...' + display_message + '...\n')
+        print('\n...' + display_message + '...\n')reload
 
     def deal_first_cards(self):
         self.display_with_style('first cards')
@@ -37,7 +37,7 @@ class blackjack_1on1(Deck):
         closed_card_list = [
             '┌───┐' , 
             '│♦♦♦│' ,
-            '│♦♦♦│' ,
+            '│♦♦│' ,
             '│♦♦♦│' ,
             '└───┘'
             ]
@@ -163,6 +163,7 @@ class blackjack_1on1(Deck):
             self.player.cards = []
             self.de4ler.cards = []
         self.sim_results()
+        
 # --------------------------------------
 if __name__ == "__main__": 
     pass

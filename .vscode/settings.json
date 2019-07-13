@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "C:\\Anaconda3\\envs\\blackjack_env\\python.exe",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}
