@@ -21,7 +21,7 @@ app.config['FLASK_DEBUG'] = flask_debug
 # Create MLAB db connection for mongodb that works with heroku app
 # mongo_uri = 'mongodb://heroku_x58zdhbn:fb7o0k7stbsk0ivbirarr2i2d3@ds139775.mlab.com:39775/heroku_x58zdhbn'
 # app.config['MONGO_URI'] = mongo_uri
-# mongo = PyMongo(app,uri=mongo_uri)
+# mongo = PyMongo(app,uri=mongo_uri)ASD
 
 @app.route('/')
 def index():
