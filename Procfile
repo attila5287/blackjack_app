@@ -1,1 +1,1 @@
-web: gunicorn blackj4ck_app.app:app
+web: gunicorn app.app:app
